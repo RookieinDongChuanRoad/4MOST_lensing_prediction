@@ -1,0 +1,25 @@
+omega     0.300000
+lambda	  0.700000
+weos	  -1.000000
+hubble	  0.700000
+prefix	  /root/4MOST_lensing_prediction/codes/test_-23
+xmin	  -5.
+ymin	  -5.
+xmax	  5.
+ymax	  5.
+pix_ext   0.100000
+pix_poi   0.100000
+maxlev	  5
+flag_extnorm 1
+flag_seeing 1
+startup 2 0 1
+lens gnfw   0.1 1.0e14 0.0 0.0 0.3 10.0 7.0 1.5
+lens sers    0.1 5.0e11 0.0 0.0 0.3 10.0 5.0 4.0 
+point 2.5 0.1 0.5
+psf 0.7 0.0 0.0 5.0 0.1 0.1 0.1 5.0 1.0
+end_startup
+start_command
+point_flux /root/4MOST_lensing_prediction/codes/test_notebook/fluxfile.dat
+findimg 
+writeimage
+quit

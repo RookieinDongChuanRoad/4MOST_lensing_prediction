@@ -34,7 +34,7 @@ class SMF_Driver_ETGs():
             #* Stellar mass function as a function of logM (i.e. probability density function)
             return 10**(logphi) * 10**((logM - logM_star) * (1 + alpha)) * np.exp(-10**(logM - logM_star ))
         self.PDF = PDF
-        logM_min = 11
+        logM_min = 10.4
         logM_max = 12.5
         normalization = 1/quad(PDF, logM_min, logM_max)[0]
         x_interpolate = np.linspace(logM_min, logM_max, 1000)
