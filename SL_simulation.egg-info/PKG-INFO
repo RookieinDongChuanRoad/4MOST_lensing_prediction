@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: SL_simulation
+Version: 0.1
+Summary: Strong Lensing Simulation Package
+Home-page: https://github.com/yourusername/SL_simulation
+Author: Your Name
+Author-email: your.email@example.com
+Keywords: strong lensing,simulation,astronomy
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
